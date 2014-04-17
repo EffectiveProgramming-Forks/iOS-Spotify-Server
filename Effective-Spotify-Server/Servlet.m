@@ -1,0 +1,64 @@
+/*
+ The MIT License (MIT)
+ Copyright (c) 2013 Crocodella Software LTDA
+ 
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+ 
+ The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+
+#import "Servlet.h"
+
+
+@implementation Servlet
+
+- (ServletResponse *)doGet:(ServletRequest *)request {
+    NSLog(@"%@", @"Override me if you want to support GET!");
+    return [self sendNotImplemented];
+}
+
+- (ServletResponse *)doPost:(ServletRequest *)request {
+    NSLog(@"%@", @"Override me if you want to support POST!");
+    return [self sendNotImplemented];
+}
+
+- (ServletResponse *)doPut:(ServletRequest *)request {
+    NSLog(@"%@", @"Override me if you want to support PUT!");
+    return [self sendNotImplemented];
+}
+
+- (ServletResponse *)doDelete:(ServletRequest *)request {
+    NSLog(@"%@", @"Override me if you want to support DELETE!");
+    return [self sendNotImplemented];
+}
+
+- (ServletResponse *)sendInternalError {
+    ServletResponse *response = [[[ServletResponse alloc] init] autorelease];
+    response.statusCode = @"500 Internal Server Error";
+    response.bodyString = @"<html><head><title>500 - Internal Server Error</title></head><body><h1>500 - Internal Server Error</h1></body></html>";
+    [response addHeader:@"Content-Type" withValue:@"text/html"];
+    
+    return response;
+}
+
+- (ServletResponse *)sendNotFound {
+    ServletResponse *response = [[[ServletResponse alloc] init] autorelease];
+    response.statusCode = @"404 Not Found";
+    response.bodyString = @"<html><head><title>404 - Not Found</title></head><body><h1>404 - Not Found</h1></body></html>";
+    [response addHeader:@"Content-Type" withValue:@"text/html"];
+    
+    return response;
+}
+
+- (ServletResponse *)sendNotImplemented {
+    ServletResponse *response = [[[ServletResponse alloc] init] autorelease];
+    response.statusCode = @"501 Not Implemented";
+    response.bodyString = @"<html><head><title>501 - Not Implemented</title></head><body><h1>501 - Not Implemented</h1></body></html>";
+    [response addHeader:@"Content-Type" withValue:@"text/html"];
+    
+    return response;
+}
+
+@end

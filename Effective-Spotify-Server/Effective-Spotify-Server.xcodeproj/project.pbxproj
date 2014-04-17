@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAB1B51B18FF6A8C00497467 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB1B51A18FF6A8C00497467 /* Foundation.framework */; };
+		FAB1B51D18FF6A8C00497467 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB1B51C18FF6A8C00497467 /* CoreGraphics.framework */; };
+		FAB1B51F18FF6A8C00497467 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB1B51E18FF6A8C00497467 /* UIKit.framework */; };
+		FAB1B52118FF6A8C00497467 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB1B52018FF6A8C00497467 /* CoreData.framework */; };
+		FAB1B52718FF6A8C00497467 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAB1B52518FF6A8C00497467 /* InfoPlist.strings */; };
+		FAB1B52918FF6A8C00497467 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B52818FF6A8C00497467 /* main.m */; };
+		FAB1B52D18FF6A8C00497467 /* ESSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B52C18FF6A8C00497467 /* ESSAppDelegate.m */; };
+		FAB1B53018FF6A8C00497467 /* Effective_Spotify_Server.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B52E18FF6A8C00497467 /* Effective_Spotify_Server.xcdatamodeld */; };
+		FAB1B53218FF6A8C00497467 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB1B53118FF6A8C00497467 /* Images.xcassets */; };
+		FAB1B53918FF6A8C00497467 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB1B53818FF6A8C00497467 /* XCTest.framework */; };
+		FAB1B53A18FF6A8C00497467 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB1B51A18FF6A8C00497467 /* Foundation.framework */; };
+		FAB1B53B18FF6A8C00497467 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB1B51E18FF6A8C00497467 /* UIKit.framework */; };
+		FAB1B53C18FF6A8C00497467 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB1B52018FF6A8C00497467 /* CoreData.framework */; };
+		FAB1B54418FF6A8C00497467 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAB1B54218FF6A8C00497467 /* InfoPlist.strings */; };
+		FAB1B54618FF6A8C00497467 /* Effective_Spotify_ServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B54518FF6A8C00497467 /* Effective_Spotify_ServerTests.m */; };
+		FAB1B57018FF77C700497467 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAB1B55218FF77C700497467 /* InfoPlist.strings */; };
+		FAB1B57118FF77C700497467 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB1B55418FF77C700497467 /* MainWindow.xib */; };
+		FAB1B57218FF77C700497467 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB1B55618FF77C700497467 /* RootViewController.xib */; };
+		FAB1B57318FF77C700497467 /* HelloWorldServlet.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B55918FF77C700497467 /* HelloWorldServlet.m */; };
+		FAB1B57418FF77C700497467 /* ImageServlet.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B55B18FF77C700497467 /* ImageServlet.m */; };
+		FAB1B57518FF77C700497467 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB1B55C18FF77C700497467 /* logo.png */; };
+		FAB1B57618FF77C700497467 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B55D18FF77C700497467 /* main.m */; };
+		FAB1B57718FF77C700497467 /* mongoose.c in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B55E18FF77C700497467 /* mongoose.c */; };
+		FAB1B57818FF77C700497467 /* MongooseServer.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B56118FF77C700497467 /* MongooseServer.m */; };
+		FAB1B57918FF77C700497467 /* MongooseWrapper-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAB1B56218FF77C700497467 /* MongooseWrapper-Info.plist */; };
+		FAB1B57A18FF77C700497467 /* MongooseWrapperAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B56518FF77C700497467 /* MongooseWrapperAppDelegate.m */; };
+		FAB1B57B18FF77C700497467 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B56718FF77C700497467 /* RootViewController.m */; };
+		FAB1B57C18FF77C700497467 /* Servlet.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B56918FF77C700497467 /* Servlet.m */; };
+		FAB1B57D18FF77C700497467 /* ServletRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B56B18FF77C700497467 /* ServletRequest.m */; };
+		FAB1B57E18FF77C700497467 /* ServletResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B56D18FF77C700497467 /* ServletResponse.m */; };
+		FAB1B57F18FF77C700497467 /* UploadServlet.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B56F18FF77C700497467 /* UploadServlet.m */; };
+		FAB1B58118FF7B7F00497467 /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB1B58018FF7B7F00497467 /* Spotify.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAB1B53D18FF6A8C00497467 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAB1B50F18FF6A8C00497467 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAB1B51618FF6A8C00497467;
+			remoteInfo = "Effective-Spotify-Server";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FAB1B51718FF6A8C00497467 /* Effective-Spotify-Server.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Effective-Spotify-Server.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB1B51A18FF6A8C00497467 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FAB1B51C18FF6A8C00497467 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FAB1B51E18FF6A8C00497467 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FAB1B52018FF6A8C00497467 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FAB1B52418FF6A8C00497467 /* Effective-Spotify-Server-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Effective-Spotify-Server-Info.plist"; sourceTree = "<group>"; };
+		FAB1B52618FF6A8C00497467 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FAB1B52818FF6A8C00497467 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FAB1B52A18FF6A8C00497467 /* Effective-Spotify-Server-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Effective-Spotify-Server-Prefix.pch"; sourceTree = "<group>"; };
+		FAB1B52B18FF6A8C00497467 /* ESSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESSAppDelegate.h; sourceTree = "<group>"; };
+		FAB1B52C18FF6A8C00497467 /* ESSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESSAppDelegate.m; sourceTree = "<group>"; };
+		FAB1B52F18FF6A8C00497467 /* Effective_Spotify_Server.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Effective_Spotify_Server.xcdatamodel; sourceTree = "<group>"; };
+		FAB1B53118FF6A8C00497467 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FAB1B53718FF6A8C00497467 /* Effective-Spotify-ServerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Effective-Spotify-ServerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB1B53818FF6A8C00497467 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FAB1B54118FF6A8C00497467 /* Effective-Spotify-ServerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Effective-Spotify-ServerTests-Info.plist"; sourceTree = "<group>"; };
+		FAB1B54318FF6A8C00497467 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FAB1B54518FF6A8C00497467 /* Effective_Spotify_ServerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Effective_Spotify_ServerTests.m; sourceTree = "<group>"; };
+		FAB1B55018FF77C700497467 /* AccessLogDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessLogDelegate.h; sourceTree = "<group>"; };
+		FAB1B55318FF77C700497467 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		FAB1B55518FF77C700497467 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = MainWindow.xib; sourceTree = "<group>"; };
+		FAB1B55718FF77C700497467 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = RootViewController.xib; sourceTree = "<group>"; };
+		FAB1B55818FF77C700497467 /* HelloWorldServlet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldServlet.h; sourceTree = "<group>"; };
+		FAB1B55918FF77C700497467 /* HelloWorldServlet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorldServlet.m; sourceTree = "<group>"; };
+		FAB1B55A18FF77C700497467 /* ImageServlet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageServlet.h; sourceTree = "<group>"; };
+		FAB1B55B18FF77C700497467 /* ImageServlet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageServlet.m; sourceTree = "<group>"; };
+		FAB1B55C18FF77C700497467 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		FAB1B55D18FF77C700497467 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FAB1B55E18FF77C700497467 /* mongoose.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mongoose.c; sourceTree = "<group>"; };
+		FAB1B55F18FF77C700497467 /* mongoose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mongoose.h; sourceTree = "<group>"; };
+		FAB1B56018FF77C700497467 /* MongooseServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongooseServer.h; sourceTree = "<group>"; };
+		FAB1B56118FF77C700497467 /* MongooseServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongooseServer.m; sourceTree = "<group>"; };
+		FAB1B56218FF77C700497467 /* MongooseWrapper-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MongooseWrapper-Info.plist"; sourceTree = "<group>"; };
+		FAB1B56318FF77C700497467 /* MongooseWrapper-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MongooseWrapper-Prefix.pch"; sourceTree = "<group>"; };
+		FAB1B56418FF77C700497467 /* MongooseWrapperAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongooseWrapperAppDelegate.h; sourceTree = "<group>"; };
+		FAB1B56518FF77C700497467 /* MongooseWrapperAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongooseWrapperAppDelegate.m; sourceTree = "<group>"; };
+		FAB1B56618FF77C700497467 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		FAB1B56718FF77C700497467 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		FAB1B56818FF77C700497467 /* Servlet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Servlet.h; sourceTree = "<group>"; };
+		FAB1B56918FF77C700497467 /* Servlet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Servlet.m; sourceTree = "<group>"; };
+		FAB1B56A18FF77C700497467 /* ServletRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServletRequest.h; sourceTree = "<group>"; };
+		FAB1B56B18FF77C700497467 /* ServletRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServletRequest.m; sourceTree = "<group>"; };
+		FAB1B56C18FF77C700497467 /* ServletResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServletResponse.h; sourceTree = "<group>"; };
+		FAB1B56D18FF77C700497467 /* ServletResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServletResponse.m; sourceTree = "<group>"; };
+		FAB1B56E18FF77C700497467 /* UploadServlet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadServlet.h; sourceTree = "<group>"; };
+		FAB1B56F18FF77C700497467 /* UploadServlet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadServlet.m; sourceTree = "<group>"; };
+		FAB1B58018FF7B7F00497467 /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Spotify.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAB1B51418FF6A8C00497467 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB1B51D18FF6A8C00497467 /* CoreGraphics.framework in Frameworks */,
+				FAB1B52118FF6A8C00497467 /* CoreData.framework in Frameworks */,
+				FAB1B51F18FF6A8C00497467 /* UIKit.framework in Frameworks */,
+				FAB1B58118FF7B7F00497467 /* Spotify.framework in Frameworks */,
+				FAB1B51B18FF6A8C00497467 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB1B53418FF6A8C00497467 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB1B53918FF6A8C00497467 /* XCTest.framework in Frameworks */,
+				FAB1B53C18FF6A8C00497467 /* CoreData.framework in Frameworks */,
+				FAB1B53B18FF6A8C00497467 /* UIKit.framework in Frameworks */,
+				FAB1B53A18FF6A8C00497467 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAB1B50E18FF6A8C00497467 = {
+			isa = PBXGroup;
+			children = (
+				FAB1B52218FF6A8C00497467 /* Effective-Spotify-Server */,
+				FAB1B53F18FF6A8C00497467 /* Effective-Spotify-ServerTests */,
+				FAB1B51918FF6A8C00497467 /* Frameworks */,
+				FAB1B51818FF6A8C00497467 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAB1B51818FF6A8C00497467 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1B51718FF6A8C00497467 /* Effective-Spotify-Server.app */,
+				FAB1B53718FF6A8C00497467 /* Effective-Spotify-ServerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAB1B51918FF6A8C00497467 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1B58018FF7B7F00497467 /* Spotify.framework */,
+				FAB1B54F18FF77A400497467 /* Mongoose Wrapper */,
+				FAB1B51A18FF6A8C00497467 /* Foundation.framework */,
+				FAB1B51C18FF6A8C00497467 /* CoreGraphics.framework */,
+				FAB1B51E18FF6A8C00497467 /* UIKit.framework */,
+				FAB1B52018FF6A8C00497467 /* CoreData.framework */,
+				FAB1B53818FF6A8C00497467 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAB1B52218FF6A8C00497467 /* Effective-Spotify-Server */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1B52B18FF6A8C00497467 /* ESSAppDelegate.h */,
+				FAB1B52C18FF6A8C00497467 /* ESSAppDelegate.m */,
+				FAB1B53118FF6A8C00497467 /* Images.xcassets */,
+				FAB1B52E18FF6A8C00497467 /* Effective_Spotify_Server.xcdatamodeld */,
+				FAB1B52318FF6A8C00497467 /* Supporting Files */,
+			);
+			path = "Effective-Spotify-Server";
+			sourceTree = "<group>";
+		};
+		FAB1B52318FF6A8C00497467 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1B52418FF6A8C00497467 /* Effective-Spotify-Server-Info.plist */,
+				FAB1B52518FF6A8C00497467 /* InfoPlist.strings */,
+				FAB1B52818FF6A8C00497467 /* main.m */,
+				FAB1B52A18FF6A8C00497467 /* Effective-Spotify-Server-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAB1B53F18FF6A8C00497467 /* Effective-Spotify-ServerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1B54518FF6A8C00497467 /* Effective_Spotify_ServerTests.m */,
+				FAB1B54018FF6A8C00497467 /* Supporting Files */,
+			);
+			path = "Effective-Spotify-ServerTests";
+			sourceTree = "<group>";
+		};
+		FAB1B54018FF6A8C00497467 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1B54118FF6A8C00497467 /* Effective-Spotify-ServerTests-Info.plist */,
+				FAB1B54218FF6A8C00497467 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAB1B54F18FF77A400497467 /* Mongoose Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1B55018FF77C700497467 /* AccessLogDelegate.h */,
+				FAB1B55118FF77C700497467 /* en.lproj */,
+				FAB1B55818FF77C700497467 /* HelloWorldServlet.h */,
+				FAB1B55918FF77C700497467 /* HelloWorldServlet.m */,
+				FAB1B55A18FF77C700497467 /* ImageServlet.h */,
+				FAB1B55B18FF77C700497467 /* ImageServlet.m */,
+				FAB1B55C18FF77C700497467 /* logo.png */,
+				FAB1B55D18FF77C700497467 /* main.m */,
+				FAB1B55E18FF77C700497467 /* mongoose.c */,
+				FAB1B55F18FF77C700497467 /* mongoose.h */,
+				FAB1B56018FF77C700497467 /* MongooseServer.h */,
+				FAB1B56118FF77C700497467 /* MongooseServer.m */,
+				FAB1B56218FF77C700497467 /* MongooseWrapper-Info.plist */,
+				FAB1B56318FF77C700497467 /* MongooseWrapper-Prefix.pch */,
+				FAB1B56418FF77C700497467 /* MongooseWrapperAppDelegate.h */,
+				FAB1B56518FF77C700497467 /* MongooseWrapperAppDelegate.m */,
+				FAB1B56618FF77C700497467 /* RootViewController.h */,
+				FAB1B56718FF77C700497467 /* RootViewController.m */,
+				FAB1B56818FF77C700497467 /* Servlet.h */,
+				FAB1B56918FF77C700497467 /* Servlet.m */,
+				FAB1B56A18FF77C700497467 /* ServletRequest.h */,
+				FAB1B56B18FF77C700497467 /* ServletRequest.m */,
+				FAB1B56C18FF77C700497467 /* ServletResponse.h */,
+				FAB1B56D18FF77C700497467 /* ServletResponse.m */,
+				FAB1B56E18FF77C700497467 /* UploadServlet.h */,
+				FAB1B56F18FF77C700497467 /* UploadServlet.m */,
+			);
+			name = "Mongoose Wrapper";
+			sourceTree = "<group>";
+		};
+		FAB1B55118FF77C700497467 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1B55218FF77C700497467 /* InfoPlist.strings */,
+				FAB1B55418FF77C700497467 /* MainWindow.xib */,
+				FAB1B55618FF77C700497467 /* RootViewController.xib */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAB1B51618FF6A8C00497467 /* Effective-Spotify-Server */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAB1B54918FF6A8C00497467 /* Build configuration list for PBXNativeTarget "Effective-Spotify-Server" */;
+			buildPhases = (
+				FAB1B51318FF6A8C00497467 /* Sources */,
+				FAB1B51418FF6A8C00497467 /* Frameworks */,
+				FAB1B51518FF6A8C00497467 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Effective-Spotify-Server";
+			productName = "Effective-Spotify-Server";
+			productReference = FAB1B51718FF6A8C00497467 /* Effective-Spotify-Server.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAB1B53618FF6A8C00497467 /* Effective-Spotify-ServerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAB1B54C18FF6A8C00497467 /* Build configuration list for PBXNativeTarget "Effective-Spotify-ServerTests" */;
+			buildPhases = (
+				FAB1B53318FF6A8C00497467 /* Sources */,
+				FAB1B53418FF6A8C00497467 /* Frameworks */,
+				FAB1B53518FF6A8C00497467 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAB1B53E18FF6A8C00497467 /* PBXTargetDependency */,
+			);
+			name = "Effective-Spotify-ServerTests";
+			productName = "Effective-Spotify-ServerTests";
+			productReference = FAB1B53718FF6A8C00497467 /* Effective-Spotify-ServerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAB1B50F18FF6A8C00497467 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ESS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Effective Programming";
+				TargetAttributes = {
+					FAB1B53618FF6A8C00497467 = {
+						TestTargetID = FAB1B51618FF6A8C00497467;
+					};
+				};
+			};
+			buildConfigurationList = FAB1B51218FF6A8C00497467 /* Build configuration list for PBXProject "Effective-Spotify-Server" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FAB1B50E18FF6A8C00497467;
+			productRefGroup = FAB1B51818FF6A8C00497467 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAB1B51618FF6A8C00497467 /* Effective-Spotify-Server */,
+				FAB1B53618FF6A8C00497467 /* Effective-Spotify-ServerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAB1B51518FF6A8C00497467 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB1B57118FF77C700497467 /* MainWindow.xib in Resources */,
+				FAB1B52718FF6A8C00497467 /* InfoPlist.strings in Resources */,
+				FAB1B57918FF77C700497467 /* MongooseWrapper-Info.plist in Resources */,
+				FAB1B57518FF77C700497467 /* logo.png in Resources */,
+				FAB1B57218FF77C700497467 /* RootViewController.xib in Resources */,
+				FAB1B57018FF77C700497467 /* InfoPlist.strings in Resources */,
+				FAB1B53218FF6A8C00497467 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB1B53518FF6A8C00497467 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB1B54418FF6A8C00497467 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAB1B51318FF6A8C00497467 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB1B53018FF6A8C00497467 /* Effective_Spotify_Server.xcdatamodeld in Sources */,
+				FAB1B57818FF77C700497467 /* MongooseServer.m in Sources */,
+				FAB1B52D18FF6A8C00497467 /* ESSAppDelegate.m in Sources */,
+				FAB1B57A18FF77C700497467 /* MongooseWrapperAppDelegate.m in Sources */,
+				FAB1B57B18FF77C700497467 /* RootViewController.m in Sources */,
+				FAB1B57D18FF77C700497467 /* ServletRequest.m in Sources */,
+				FAB1B57C18FF77C700497467 /* Servlet.m in Sources */,
+				FAB1B52918FF6A8C00497467 /* main.m in Sources */,
+				FAB1B57E18FF77C700497467 /* ServletResponse.m in Sources */,
+				FAB1B57418FF77C700497467 /* ImageServlet.m in Sources */,
+				FAB1B57618FF77C700497467 /* main.m in Sources */,
+				FAB1B57718FF77C700497467 /* mongoose.c in Sources */,
+				FAB1B57F18FF77C700497467 /* UploadServlet.m in Sources */,
+				FAB1B57318FF77C700497467 /* HelloWorldServlet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB1B53318FF6A8C00497467 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB1B54618FF6A8C00497467 /* Effective_Spotify_ServerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAB1B53E18FF6A8C00497467 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAB1B51618FF6A8C00497467 /* Effective-Spotify-Server */;
+			targetProxy = FAB1B53D18FF6A8C00497467 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAB1B52518FF6A8C00497467 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAB1B52618FF6A8C00497467 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FAB1B54218FF6A8C00497467 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAB1B54318FF6A8C00497467 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FAB1B55218FF77C700497467 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAB1B55318FF77C700497467 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FAB1B55418FF77C700497467 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAB1B55518FF77C700497467 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		FAB1B55618FF77C700497467 /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAB1B55718FF77C700497467 /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAB1B54718FF6A8C00497467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAB1B54818FF6A8C00497467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAB1B54A18FF6A8C00497467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Effective-Spotify-Server/Effective-Spotify-Server-Prefix.pch";
+				INFOPLIST_FILE = "Effective-Spotify-Server/Effective-Spotify-Server-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FAB1B54B18FF6A8C00497467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Effective-Spotify-Server/Effective-Spotify-Server-Prefix.pch";
+				INFOPLIST_FILE = "Effective-Spotify-Server/Effective-Spotify-Server-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FAB1B54D18FF6A8C00497467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Effective-Spotify-Server.app/Effective-Spotify-Server";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Effective-Spotify-Server/Effective-Spotify-Server-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Effective-Spotify-ServerTests/Effective-Spotify-ServerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FAB1B54E18FF6A8C00497467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Effective-Spotify-Server.app/Effective-Spotify-Server";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Effective-Spotify-Server/Effective-Spotify-Server-Prefix.pch";
+				INFOPLIST_FILE = "Effective-Spotify-ServerTests/Effective-Spotify-ServerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAB1B51218FF6A8C00497467 /* Build configuration list for PBXProject "Effective-Spotify-Server" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB1B54718FF6A8C00497467 /* Debug */,
+				FAB1B54818FF6A8C00497467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAB1B54918FF6A8C00497467 /* Build configuration list for PBXNativeTarget "Effective-Spotify-Server" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB1B54A18FF6A8C00497467 /* Debug */,
+				FAB1B54B18FF6A8C00497467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FAB1B54C18FF6A8C00497467 /* Build configuration list for PBXNativeTarget "Effective-Spotify-ServerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB1B54D18FF6A8C00497467 /* Debug */,
+				FAB1B54E18FF6A8C00497467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FAB1B52E18FF6A8C00497467 /* Effective_Spotify_Server.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FAB1B52F18FF6A8C00497467 /* Effective_Spotify_Server.xcdatamodel */,
+			);
+			currentVersion = FAB1B52F18FF6A8C00497467 /* Effective_Spotify_Server.xcdatamodel */;
+			path = Effective_Spotify_Server.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FAB1B50F18FF6A8C00497467 /* Project object */;
+}
