@@ -39,11 +39,11 @@
     
 }
 
-@property (readwrite,retain) NSString *statusCode;
-@property (readonly,retain) NSMutableDictionary *headers;
-@property (readwrite,retain) NSData *body;
-@property (readwrite,retain) NSString *bodyString;
-@property (readwrite,retain) NSData *customResponse;
+@property (readwrite,strong) NSString *statusCode;
+@property (readonly,strong) NSMutableDictionary *headers;
+@property (readwrite,strong) NSData *body;
+@property (readwrite,strong) NSString *bodyString;
+@property (readwrite,strong) NSData *customResponse;
 
 /**
  * Adds a new header to the response

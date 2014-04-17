@@ -8,6 +8,13 @@
 
 #import "ESSAppDelegate.h"
 #import <Spotify/Spotify.h>
+#import "ESSServer.h"
+
+@interface ESSAppDelegate ()
+
+@property (nonatomic) ESSServer *server;
+
+@end
 
 @implementation ESSAppDelegate
 
@@ -21,6 +28,9 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    self.server = [[ESSServer alloc] initWithServerPort:3434];
+    
     return YES;
 }
 

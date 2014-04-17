@@ -11,17 +11,10 @@
 
 #import <Foundation/Foundation.h>
 #import "Servlet.h"
-#import "AccessLogDelegate.h"
 
 /**
  * Sample servlet which returns an image. Responds to GET requests only
  */
-@interface ImageServlet : Servlet {
-    id<AccessLogDelegate> delegate;
-}
-
-@property (nonatomic,assign) id<AccessLogDelegate> delegate;
-
-- (void)logPath:(NSString *)path;
+@interface ImageServlet : Servlet
 
 @end

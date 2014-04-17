@@ -34,9 +34,9 @@
     if ((self = [super init])) {
         
         requestInfo = ri;
-        body = [bd retain];
+        body = bd;
         
-        path = [[NSString stringWithUTF8String:ri->uri] retain];
+        path = [NSString stringWithUTF8String:ri->uri];
         
         BOOL isPost = strcmp(ri->request_method, "POST") == 0;
         
@@ -57,7 +57,6 @@
             if (isPost && [name isEqualToString:@"Content-Type"] && [val isEqualToString:@"application/x-www-form-urlencoded"]) {
                 NSString *strBody = [[NSString alloc] initWithData:body encoding:NSUTF8StringEncoding];
                 [self extractParametersFrom:strBody];
-                [strBody release];
             }
         }
         
@@ -72,12 +71,5 @@
     return self;
 }
 
-- (void)dealloc {
-    [path release];
-    [headers release];
-    [parameters release];
-    [body release];
-    [super dealloc];
-}
 
 @end

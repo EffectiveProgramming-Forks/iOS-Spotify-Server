@@ -30,7 +30,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @property (readonly,assign) struct mg_context *ctx;
-@property (readonly,retain) NSMutableDictionary *servlets;
+@property (readonly,strong) NSMutableDictionary *servlets;
 
 /**
  * Creates a new server in the specified port, with an option to allow

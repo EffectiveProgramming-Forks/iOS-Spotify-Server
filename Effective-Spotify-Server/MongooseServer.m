@@ -24,11 +24,11 @@ void *handleRequest(enum mg_event event,
     char *buf;
     int len;
     
-    MongooseServer *server = (MongooseServer *)request_info->user_data;
+    MongooseServer *server = (__bridge MongooseServer *)request_info->user_data;
     
     // Reads the body of the request
     
-    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+    @autoreleasepool {
     
     NSData *body = nil;
     
@@ -84,7 +84,7 @@ void *handleRequest(enum mg_event event,
             
             // If no servlets were found to respond, sends a 404 error
             
-            servlet = [[[Servlet alloc] init] autorelease];
+            servlet = [[Servlet alloc] init];
             response = [servlet sendNotFound];
         }
 
@@ -94,7 +94,7 @@ void *handleRequest(enum mg_event event,
     
     mg_write(conn, [resp bytes], [resp length]);
     
-    [pool release];
+    }
     
     return "handled";
 }
@@ -112,7 +112,7 @@ void *handleRequest(enum mg_event event,
             NULL
         };
         
-        ctx = mg_start(handleRequest, self, options);
+        ctx = mg_start(handleRequest, (__bridge void *)(self), options);
         
         servlets = [[NSMutableDictionary alloc] init];
         
@@ -124,7 +124,7 @@ void *handleRequest(enum mg_event event,
     
     if ((self = [super init])) {
         
-        ctx = mg_start(handleRequest, self, options);
+        ctx = mg_start(handleRequest, (__bridge void *)(self), options);
         
         servlets = [[NSMutableDictionary alloc] init];
         
@@ -136,8 +136,6 @@ void *handleRequest(enum mg_event event,
 - (void)dealloc {
     
     mg_stop(ctx);
-    [servlets release];
-    [super dealloc];
 }
 
 - (void)addServlet:(Servlet *)servlet forPath:(NSString *)path {

@@ -14,17 +14,13 @@
 
 @implementation ImageServlet
 
-@synthesize delegate;
-
 - (ServletResponse *)doGet:(ServletRequest *)request {
-
-    [self performSelectorOnMainThread:@selector(logPath:) withObject:request.path waitUntilDone:NO];
     
     NSString *imagePath = [[NSBundle mainBundle] pathForResource:@"logo" ofType:@"png"];
     NSURL *imageURL = [NSURL fileURLWithPath:imagePath];
     NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
     
-    ServletResponse *response = [[[ServletResponse alloc] init] autorelease];
+    ServletResponse *response = [[ServletResponse alloc] init];
     response.statusCode = @"200 OK";
     response.body = imageData;
     [response addHeader:@"Content-Type" withValue:@"image/png"];
@@ -32,8 +28,5 @@
     return response;
 }
 
-- (void)logPath:(NSString *)path {
-    [delegate didLogAccessInServlet:@"ImageServlet" forPath:path];
-}
 
 @end

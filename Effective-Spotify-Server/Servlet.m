@@ -35,7 +35,7 @@
 }
 
 - (ServletResponse *)sendInternalError {
-    ServletResponse *response = [[[ServletResponse alloc] init] autorelease];
+    ServletResponse *response = [[ServletResponse alloc] init];
     response.statusCode = @"500 Internal Server Error";
     response.bodyString = @"<html><head><title>500 - Internal Server Error</title></head><body><h1>500 - Internal Server Error</h1></body></html>";
     [response addHeader:@"Content-Type" withValue:@"text/html"];
@@ -44,7 +44,7 @@
 }
 
 - (ServletResponse *)sendNotFound {
-    ServletResponse *response = [[[ServletResponse alloc] init] autorelease];
+    ServletResponse *response = [[ServletResponse alloc] init];
     response.statusCode = @"404 Not Found";
     response.bodyString = @"<html><head><title>404 - Not Found</title></head><body><h1>404 - Not Found</h1></body></html>";
     [response addHeader:@"Content-Type" withValue:@"text/html"];
@@ -53,7 +53,7 @@
 }
 
 - (ServletResponse *)sendNotImplemented {
-    ServletResponse *response = [[[ServletResponse alloc] init] autorelease];
+    ServletResponse *response = [[ServletResponse alloc] init];
     response.statusCode = @"501 Not Implemented";
     response.bodyString = @"<html><head><title>501 - Not Implemented</title></head><body><h1>501 - Not Implemented</h1></body></html>";
     [response addHeader:@"Content-Type" withValue:@"text/html"];

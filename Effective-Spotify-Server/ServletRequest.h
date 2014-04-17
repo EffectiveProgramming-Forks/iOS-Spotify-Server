@@ -46,10 +46,10 @@
 }
 
 @property (readonly,assign) const struct mg_request_info *requestInfo;
-@property (readonly,retain) NSString *path;
-@property (readonly,retain) NSDictionary *headers;
-@property (readonly,retain) NSDictionary *parameters;
-@property (readonly,retain) NSData *body;
+@property (readonly,strong) NSString *path;
+@property (readonly,strong) NSDictionary *headers;
+@property (readonly,strong) NSDictionary *parameters;
+@property (readonly,strong) NSData *body;
 
 /**
  * Creates a new request object

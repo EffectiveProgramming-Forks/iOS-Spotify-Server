@@ -22,23 +22,15 @@
 		FAB1B53C18FF6A8C00497467 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB1B52018FF6A8C00497467 /* CoreData.framework */; };
 		FAB1B54418FF6A8C00497467 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAB1B54218FF6A8C00497467 /* InfoPlist.strings */; };
 		FAB1B54618FF6A8C00497467 /* Effective_Spotify_ServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B54518FF6A8C00497467 /* Effective_Spotify_ServerTests.m */; };
-		FAB1B57018FF77C700497467 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAB1B55218FF77C700497467 /* InfoPlist.strings */; };
-		FAB1B57118FF77C700497467 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB1B55418FF77C700497467 /* MainWindow.xib */; };
-		FAB1B57218FF77C700497467 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB1B55618FF77C700497467 /* RootViewController.xib */; };
-		FAB1B57318FF77C700497467 /* HelloWorldServlet.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B55918FF77C700497467 /* HelloWorldServlet.m */; };
-		FAB1B57418FF77C700497467 /* ImageServlet.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B55B18FF77C700497467 /* ImageServlet.m */; };
-		FAB1B57518FF77C700497467 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB1B55C18FF77C700497467 /* logo.png */; };
-		FAB1B57618FF77C700497467 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B55D18FF77C700497467 /* main.m */; };
-		FAB1B57718FF77C700497467 /* mongoose.c in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B55E18FF77C700497467 /* mongoose.c */; };
-		FAB1B57818FF77C700497467 /* MongooseServer.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B56118FF77C700497467 /* MongooseServer.m */; };
-		FAB1B57918FF77C700497467 /* MongooseWrapper-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAB1B56218FF77C700497467 /* MongooseWrapper-Info.plist */; };
-		FAB1B57A18FF77C700497467 /* MongooseWrapperAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B56518FF77C700497467 /* MongooseWrapperAppDelegate.m */; };
-		FAB1B57B18FF77C700497467 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B56718FF77C700497467 /* RootViewController.m */; };
-		FAB1B57C18FF77C700497467 /* Servlet.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B56918FF77C700497467 /* Servlet.m */; };
-		FAB1B57D18FF77C700497467 /* ServletRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B56B18FF77C700497467 /* ServletRequest.m */; };
-		FAB1B57E18FF77C700497467 /* ServletResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B56D18FF77C700497467 /* ServletResponse.m */; };
-		FAB1B57F18FF77C700497467 /* UploadServlet.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B56F18FF77C700497467 /* UploadServlet.m */; };
 		FAB1B58118FF7B7F00497467 /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB1B58018FF7B7F00497467 /* Spotify.framework */; };
+		FAB1B58518FF80B600497467 /* ESSServer.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B58418FF80B600497467 /* ESSServer.m */; };
+		FAB1B5AA18FF84E500497467 /* ImageServlet.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B59118FF84E500497467 /* ImageServlet.m */; };
+		FAB1B5AD18FF84E500497467 /* mongoose.c in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B59418FF84E500497467 /* mongoose.c */; };
+		FAB1B5AE18FF84E500497467 /* MongooseServer.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B59718FF84E500497467 /* MongooseServer.m */; };
+		FAB1B5B218FF84E500497467 /* Servlet.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B59F18FF84E500497467 /* Servlet.m */; };
+		FAB1B5B318FF84E500497467 /* ServletRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B5A118FF84E500497467 /* ServletRequest.m */; };
+		FAB1B5B418FF84E500497467 /* ServletResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B5A318FF84E500497467 /* ServletResponse.m */; };
+		FAB1B5B518FF84E500497467 /* UploadServlet.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B5A518FF84E500497467 /* UploadServlet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,35 +62,23 @@
 		FAB1B54118FF6A8C00497467 /* Effective-Spotify-ServerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Effective-Spotify-ServerTests-Info.plist"; sourceTree = "<group>"; };
 		FAB1B54318FF6A8C00497467 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FAB1B54518FF6A8C00497467 /* Effective_Spotify_ServerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Effective_Spotify_ServerTests.m; sourceTree = "<group>"; };
-		FAB1B55018FF77C700497467 /* AccessLogDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessLogDelegate.h; sourceTree = "<group>"; };
-		FAB1B55318FF77C700497467 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
-		FAB1B55518FF77C700497467 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = MainWindow.xib; sourceTree = "<group>"; };
-		FAB1B55718FF77C700497467 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = RootViewController.xib; sourceTree = "<group>"; };
-		FAB1B55818FF77C700497467 /* HelloWorldServlet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldServlet.h; sourceTree = "<group>"; };
-		FAB1B55918FF77C700497467 /* HelloWorldServlet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorldServlet.m; sourceTree = "<group>"; };
-		FAB1B55A18FF77C700497467 /* ImageServlet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageServlet.h; sourceTree = "<group>"; };
-		FAB1B55B18FF77C700497467 /* ImageServlet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageServlet.m; sourceTree = "<group>"; };
-		FAB1B55C18FF77C700497467 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		FAB1B55D18FF77C700497467 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FAB1B55E18FF77C700497467 /* mongoose.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mongoose.c; sourceTree = "<group>"; };
-		FAB1B55F18FF77C700497467 /* mongoose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mongoose.h; sourceTree = "<group>"; };
-		FAB1B56018FF77C700497467 /* MongooseServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongooseServer.h; sourceTree = "<group>"; };
-		FAB1B56118FF77C700497467 /* MongooseServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongooseServer.m; sourceTree = "<group>"; };
-		FAB1B56218FF77C700497467 /* MongooseWrapper-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MongooseWrapper-Info.plist"; sourceTree = "<group>"; };
-		FAB1B56318FF77C700497467 /* MongooseWrapper-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MongooseWrapper-Prefix.pch"; sourceTree = "<group>"; };
-		FAB1B56418FF77C700497467 /* MongooseWrapperAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongooseWrapperAppDelegate.h; sourceTree = "<group>"; };
-		FAB1B56518FF77C700497467 /* MongooseWrapperAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongooseWrapperAppDelegate.m; sourceTree = "<group>"; };
-		FAB1B56618FF77C700497467 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		FAB1B56718FF77C700497467 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		FAB1B56818FF77C700497467 /* Servlet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Servlet.h; sourceTree = "<group>"; };
-		FAB1B56918FF77C700497467 /* Servlet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Servlet.m; sourceTree = "<group>"; };
-		FAB1B56A18FF77C700497467 /* ServletRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServletRequest.h; sourceTree = "<group>"; };
-		FAB1B56B18FF77C700497467 /* ServletRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServletRequest.m; sourceTree = "<group>"; };
-		FAB1B56C18FF77C700497467 /* ServletResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServletResponse.h; sourceTree = "<group>"; };
-		FAB1B56D18FF77C700497467 /* ServletResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServletResponse.m; sourceTree = "<group>"; };
-		FAB1B56E18FF77C700497467 /* UploadServlet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadServlet.h; sourceTree = "<group>"; };
-		FAB1B56F18FF77C700497467 /* UploadServlet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadServlet.m; sourceTree = "<group>"; };
 		FAB1B58018FF7B7F00497467 /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Spotify.framework; sourceTree = "<group>"; };
+		FAB1B58318FF80B600497467 /* ESSServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESSServer.h; sourceTree = "<group>"; };
+		FAB1B58418FF80B600497467 /* ESSServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESSServer.m; sourceTree = "<group>"; };
+		FAB1B59018FF84E500497467 /* ImageServlet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageServlet.h; sourceTree = "<group>"; };
+		FAB1B59118FF84E500497467 /* ImageServlet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageServlet.m; sourceTree = "<group>"; };
+		FAB1B59418FF84E500497467 /* mongoose.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mongoose.c; sourceTree = "<group>"; };
+		FAB1B59518FF84E500497467 /* mongoose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mongoose.h; sourceTree = "<group>"; };
+		FAB1B59618FF84E500497467 /* MongooseServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongooseServer.h; sourceTree = "<group>"; };
+		FAB1B59718FF84E500497467 /* MongooseServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongooseServer.m; sourceTree = "<group>"; };
+		FAB1B59E18FF84E500497467 /* Servlet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Servlet.h; sourceTree = "<group>"; };
+		FAB1B59F18FF84E500497467 /* Servlet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Servlet.m; sourceTree = "<group>"; };
+		FAB1B5A018FF84E500497467 /* ServletRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServletRequest.h; sourceTree = "<group>"; };
+		FAB1B5A118FF84E500497467 /* ServletRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServletRequest.m; sourceTree = "<group>"; };
+		FAB1B5A218FF84E500497467 /* ServletResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServletResponse.h; sourceTree = "<group>"; };
+		FAB1B5A318FF84E500497467 /* ServletResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServletResponse.m; sourceTree = "<group>"; };
+		FAB1B5A418FF84E500497467 /* UploadServlet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadServlet.h; sourceTree = "<group>"; };
+		FAB1B5A518FF84E500497467 /* UploadServlet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadServlet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +144,7 @@
 		FAB1B52218FF6A8C00497467 /* Effective-Spotify-Server */ = {
 			isa = PBXGroup;
 			children = (
+				FAB1B58218FF809400497467 /* Server */,
 				FAB1B52B18FF6A8C00497467 /* ESSAppDelegate.h */,
 				FAB1B52C18FF6A8C00497467 /* ESSAppDelegate.m */,
 				FAB1B53118FF6A8C00497467 /* Images.xcassets */,
@@ -205,44 +186,31 @@
 		FAB1B54F18FF77A400497467 /* Mongoose Wrapper */ = {
 			isa = PBXGroup;
 			children = (
-				FAB1B55018FF77C700497467 /* AccessLogDelegate.h */,
-				FAB1B55118FF77C700497467 /* en.lproj */,
-				FAB1B55818FF77C700497467 /* HelloWorldServlet.h */,
-				FAB1B55918FF77C700497467 /* HelloWorldServlet.m */,
-				FAB1B55A18FF77C700497467 /* ImageServlet.h */,
-				FAB1B55B18FF77C700497467 /* ImageServlet.m */,
-				FAB1B55C18FF77C700497467 /* logo.png */,
-				FAB1B55D18FF77C700497467 /* main.m */,
-				FAB1B55E18FF77C700497467 /* mongoose.c */,
-				FAB1B55F18FF77C700497467 /* mongoose.h */,
-				FAB1B56018FF77C700497467 /* MongooseServer.h */,
-				FAB1B56118FF77C700497467 /* MongooseServer.m */,
-				FAB1B56218FF77C700497467 /* MongooseWrapper-Info.plist */,
-				FAB1B56318FF77C700497467 /* MongooseWrapper-Prefix.pch */,
-				FAB1B56418FF77C700497467 /* MongooseWrapperAppDelegate.h */,
-				FAB1B56518FF77C700497467 /* MongooseWrapperAppDelegate.m */,
-				FAB1B56618FF77C700497467 /* RootViewController.h */,
-				FAB1B56718FF77C700497467 /* RootViewController.m */,
-				FAB1B56818FF77C700497467 /* Servlet.h */,
-				FAB1B56918FF77C700497467 /* Servlet.m */,
-				FAB1B56A18FF77C700497467 /* ServletRequest.h */,
-				FAB1B56B18FF77C700497467 /* ServletRequest.m */,
-				FAB1B56C18FF77C700497467 /* ServletResponse.h */,
-				FAB1B56D18FF77C700497467 /* ServletResponse.m */,
-				FAB1B56E18FF77C700497467 /* UploadServlet.h */,
-				FAB1B56F18FF77C700497467 /* UploadServlet.m */,
+				FAB1B59018FF84E500497467 /* ImageServlet.h */,
+				FAB1B59118FF84E500497467 /* ImageServlet.m */,
+				FAB1B59418FF84E500497467 /* mongoose.c */,
+				FAB1B59518FF84E500497467 /* mongoose.h */,
+				FAB1B59618FF84E500497467 /* MongooseServer.h */,
+				FAB1B59718FF84E500497467 /* MongooseServer.m */,
+				FAB1B59E18FF84E500497467 /* Servlet.h */,
+				FAB1B59F18FF84E500497467 /* Servlet.m */,
+				FAB1B5A018FF84E500497467 /* ServletRequest.h */,
+				FAB1B5A118FF84E500497467 /* ServletRequest.m */,
+				FAB1B5A218FF84E500497467 /* ServletResponse.h */,
+				FAB1B5A318FF84E500497467 /* ServletResponse.m */,
+				FAB1B5A418FF84E500497467 /* UploadServlet.h */,
+				FAB1B5A518FF84E500497467 /* UploadServlet.m */,
 			);
 			name = "Mongoose Wrapper";
 			sourceTree = "<group>";
 		};
-		FAB1B55118FF77C700497467 /* en.lproj */ = {
+		FAB1B58218FF809400497467 /* Server */ = {
 			isa = PBXGroup;
 			children = (
-				FAB1B55218FF77C700497467 /* InfoPlist.strings */,
-				FAB1B55418FF77C700497467 /* MainWindow.xib */,
-				FAB1B55618FF77C700497467 /* RootViewController.xib */,
+				FAB1B58318FF80B600497467 /* ESSServer.h */,
+				FAB1B58418FF80B600497467 /* ESSServer.m */,
 			);
-			path = en.lproj;
+			name = Server;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,12 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAB1B57118FF77C700497467 /* MainWindow.xib in Resources */,
 				FAB1B52718FF6A8C00497467 /* InfoPlist.strings in Resources */,
-				FAB1B57918FF77C700497467 /* MongooseWrapper-Info.plist in Resources */,
-				FAB1B57518FF77C700497467 /* logo.png in Resources */,
-				FAB1B57218FF77C700497467 /* RootViewController.xib in Resources */,
-				FAB1B57018FF77C700497467 /* InfoPlist.strings in Resources */,
 				FAB1B53218FF6A8C00497467 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,20 +309,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB1B58518FF80B600497467 /* ESSServer.m in Sources */,
+				FAB1B5AE18FF84E500497467 /* MongooseServer.m in Sources */,
+				FAB1B5AD18FF84E500497467 /* mongoose.c in Sources */,
+				FAB1B5B418FF84E500497467 /* ServletResponse.m in Sources */,
 				FAB1B53018FF6A8C00497467 /* Effective_Spotify_Server.xcdatamodeld in Sources */,
-				FAB1B57818FF77C700497467 /* MongooseServer.m in Sources */,
+				FAB1B5B218FF84E500497467 /* Servlet.m in Sources */,
+				FAB1B5AA18FF84E500497467 /* ImageServlet.m in Sources */,
+				FAB1B5B518FF84E500497467 /* UploadServlet.m in Sources */,
 				FAB1B52D18FF6A8C00497467 /* ESSAppDelegate.m in Sources */,
-				FAB1B57A18FF77C700497467 /* MongooseWrapperAppDelegate.m in Sources */,
-				FAB1B57B18FF77C700497467 /* RootViewController.m in Sources */,
-				FAB1B57D18FF77C700497467 /* ServletRequest.m in Sources */,
-				FAB1B57C18FF77C700497467 /* Servlet.m in Sources */,
+				FAB1B5B318FF84E500497467 /* ServletRequest.m in Sources */,
 				FAB1B52918FF6A8C00497467 /* main.m in Sources */,
-				FAB1B57E18FF77C700497467 /* ServletResponse.m in Sources */,
-				FAB1B57418FF77C700497467 /* ImageServlet.m in Sources */,
-				FAB1B57618FF77C700497467 /* main.m in Sources */,
-				FAB1B57718FF77C700497467 /* mongoose.c in Sources */,
-				FAB1B57F18FF77C700497467 /* UploadServlet.m in Sources */,
-				FAB1B57318FF77C700497467 /* HelloWorldServlet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,30 +356,6 @@
 				FAB1B54318FF6A8C00497467 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		FAB1B55218FF77C700497467 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAB1B55318FF77C700497467 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		FAB1B55418FF77C700497467 /* MainWindow.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAB1B55518FF77C700497467 /* en */,
-			);
-			name = MainWindow.xib;
-			sourceTree = "<group>";
-		};
-		FAB1B55618FF77C700497467 /* RootViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAB1B55718FF77C700497467 /* en */,
-			);
-			name = RootViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

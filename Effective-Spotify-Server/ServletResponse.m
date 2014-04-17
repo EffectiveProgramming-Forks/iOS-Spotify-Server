@@ -26,20 +26,13 @@
     return self;
 }
 
-- (void)dealloc {
-    [statusCode release];
-    [headers release];
-    [body release];
-    [customResponse release];
-    [super dealloc];
-}
 
 - (void)addHeader:(NSString *)name withValue:(NSString *)val {
     [headers setValue:val forKey:name];
 }
 
 - (NSString *)bodyString {
-    NSString *ret = [[[NSString alloc] initWithData:body encoding:NSUTF8StringEncoding] autorelease];
+    NSString *ret = [[NSString alloc] initWithData:body encoding:NSUTF8StringEncoding];
     return ret;
 }
 

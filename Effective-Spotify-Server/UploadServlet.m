@@ -13,13 +13,8 @@
 
 
 @implementation UploadServlet
-
-@synthesize delegate;
-
 - (ServletResponse *)doPost:(ServletRequest *)request {
-    
-    [self performSelectorOnMainThread:@selector(logPath:) withObject:request.path waitUntilDone:NO];
-    
+        
     // WARNING: This is not a particularly robust implementation of the multipart
     // form data standard. It should work only for cases where there is a single
     // file element in the request.
@@ -109,7 +104,7 @@
     
     [fileData writeToFile:file atomically:YES];
     
-    ServletResponse *resp = [[[ServletResponse alloc] init] autorelease];
+    ServletResponse *resp = [[ServletResponse alloc] init];
     resp.statusCode = @"200 OK";
     resp.bodyString = [NSString stringWithFormat:@"%@ upload successfully.", fileName];
     [resp addHeader:@"Content-Type" withValue:@"text/plain"];
@@ -117,8 +112,5 @@
     return resp;
 }
 
-- (void)logPath:(NSString *)path {
-    [delegate didLogAccessInServlet:@"UploadServlet" forPath:path];
-}
 
 @end

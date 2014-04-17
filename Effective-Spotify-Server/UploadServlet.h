@@ -11,7 +11,6 @@
 
 #import <Foundation/Foundation.h>
 #import "Servlet.h"
-#import "AccessLogDelegate.h"
 
 /**
  * Sample servlet which receives a file upload and saves it to the
@@ -20,12 +19,7 @@
  * work only for cases where there is a single file element in 
  * the request.
  */
-@interface UploadServlet : Servlet {
-    id<AccessLogDelegate> delegate;
-}
+@interface UploadServlet : Servlet
 
-@property (nonatomic,assign) id<AccessLogDelegate> delegate;
-
-- (void)logPath:(NSString *)path;
 
 @end
