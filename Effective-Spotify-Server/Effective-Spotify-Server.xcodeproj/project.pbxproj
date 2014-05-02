@@ -31,6 +31,8 @@
 		FAB1B5B318FF84E500497467 /* ServletRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B5A118FF84E500497467 /* ServletRequest.m */; };
 		FAB1B5B418FF84E500497467 /* ServletResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B5A318FF84E500497467 /* ServletResponse.m */; };
 		FAB1B5B518FF84E500497467 /* UploadServlet.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B5A518FF84E500497467 /* UploadServlet.m */; };
+		FADF84191914104E00D7E7D4 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FADF84181914104E00D7E7D4 /* libOCMock.a */; };
+		FADF84211914108300D7E7D4 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FADF84181914104E00D7E7D4 /* libOCMock.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,13 @@
 		FAB1B5A318FF84E500497467 /* ServletResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServletResponse.m; sourceTree = "<group>"; };
 		FAB1B5A418FF84E500497467 /* UploadServlet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadServlet.h; sourceTree = "<group>"; };
 		FAB1B5A518FF84E500497467 /* UploadServlet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadServlet.m; sourceTree = "<group>"; };
+		FADF84181914104E00D7E7D4 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
+		FADF841B1914105D00D7E7D4 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		FADF841C1914105D00D7E7D4 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		FADF841D1914105D00D7E7D4 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		FADF841E1914105D00D7E7D4 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		FADF841F1914105D00D7E7D4 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		FADF84201914105D00D7E7D4 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +98,7 @@
 				FAB1B51D18FF6A8C00497467 /* CoreGraphics.framework in Frameworks */,
 				FAB1B52118FF6A8C00497467 /* CoreData.framework in Frameworks */,
 				FAB1B51F18FF6A8C00497467 /* UIKit.framework in Frameworks */,
+				FADF84191914104E00D7E7D4 /* libOCMock.a in Frameworks */,
 				FAB1B58118FF7B7F00497467 /* Spotify.framework in Frameworks */,
 				FAB1B51B18FF6A8C00497467 /* Foundation.framework in Frameworks */,
 			);
@@ -98,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADF84211914108300D7E7D4 /* libOCMock.a in Frameworks */,
 				FAB1B53918FF6A8C00497467 /* XCTest.framework in Frameworks */,
 				FAB1B53C18FF6A8C00497467 /* CoreData.framework in Frameworks */,
 				FAB1B53B18FF6A8C00497467 /* UIKit.framework in Frameworks */,
@@ -130,6 +141,8 @@
 		FAB1B51918FF6A8C00497467 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FADF841A1914105D00D7E7D4 /* OCMock */,
+				FADF84181914104E00D7E7D4 /* libOCMock.a */,
 				FAB1B58018FF7B7F00497467 /* Spotify.framework */,
 				FAB1B54F18FF77A400497467 /* Mongoose Wrapper */,
 				FAB1B51A18FF6A8C00497467 /* Foundation.framework */,
@@ -211,6 +224,19 @@
 				FAB1B58418FF80B600497467 /* ESSServer.m */,
 			);
 			name = Server;
+			sourceTree = "<group>";
+		};
+		FADF841A1914105D00D7E7D4 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				FADF841B1914105D00D7E7D4 /* NSNotificationCenter+OCMAdditions.h */,
+				FADF841C1914105D00D7E7D4 /* OCMArg.h */,
+				FADF841D1914105D00D7E7D4 /* OCMConstraint.h */,
+				FADF841E1914105D00D7E7D4 /* OCMock.h */,
+				FADF841F1914105D00D7E7D4 /* OCMockObject.h */,
+				FADF84201914105D00D7E7D4 /* OCMockRecorder.h */,
+			);
+			path = OCMock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -445,6 +471,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Effective-Spotify-Server/Effective-Spotify-Server-Prefix.pch";
 				INFOPLIST_FILE = "Effective-Spotify-Server/Effective-Spotify-Server-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -462,6 +492,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Effective-Spotify-Server/Effective-Spotify-Server-Prefix.pch";
 				INFOPLIST_FILE = "Effective-Spotify-Server/Effective-Spotify-Server-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -482,7 +516,23 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/**",
+				);
 				INFOPLIST_FILE = "Effective-Spotify-ServerTests/Effective-Spotify-ServerTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -500,7 +550,23 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Effective-Spotify-Server/Effective-Spotify-Server-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/**",
+				);
 				INFOPLIST_FILE = "Effective-Spotify-ServerTests/Effective-Spotify-ServerTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -526,6 +592,7 @@
 				FAB1B54B18FF6A8C00497467 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAB1B54C18FF6A8C00497467 /* Build configuration list for PBXNativeTarget "Effective-Spotify-ServerTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +601,7 @@
 				FAB1B54E18FF6A8C00497467 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
