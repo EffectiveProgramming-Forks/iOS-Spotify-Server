@@ -33,6 +33,12 @@
 		FAB1B5B518FF84E500497467 /* UploadServlet.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1B5A518FF84E500497467 /* UploadServlet.m */; };
 		FADF84191914104E00D7E7D4 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FADF84181914104E00D7E7D4 /* libOCMock.a */; };
 		FADF84211914108300D7E7D4 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FADF84181914104E00D7E7D4 /* libOCMock.a */; };
+		FADF84231914113F00D7E7D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADF84221914113F00D7E7D4 /* Main.storyboard */; };
+		FADF84271917FB1A00D7E7D4 /* ESSLandingPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FADF84261917FB1A00D7E7D4 /* ESSLandingPageViewController.m */; };
+		FADF842A1917FB3500D7E7D4 /* ESSLandingPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FADF84291917FB3500D7E7D4 /* ESSLandingPageView.m */; };
+		FADF842D1917FBED00D7E7D4 /* ESSLandingPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FADF842C1917FBED00D7E7D4 /* ESSLandingPageModel.m */; };
+		FADF842F1918054B00D7E7D4 /* ESSLandingPageViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FADF842E1918054B00D7E7D4 /* ESSLandingPageViewControllerTests.m */; };
+		FADF84311918089600D7E7D4 /* ESSLandingPageModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FADF84301918089600D7E7D4 /* ESSLandingPageModelTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +94,15 @@
 		FADF841E1914105D00D7E7D4 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
 		FADF841F1914105D00D7E7D4 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
 		FADF84201914105D00D7E7D4 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
+		FADF84221914113F00D7E7D4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FADF84251917FB1A00D7E7D4 /* ESSLandingPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESSLandingPageViewController.h; sourceTree = "<group>"; };
+		FADF84261917FB1A00D7E7D4 /* ESSLandingPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESSLandingPageViewController.m; sourceTree = "<group>"; };
+		FADF84281917FB3500D7E7D4 /* ESSLandingPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESSLandingPageView.h; sourceTree = "<group>"; };
+		FADF84291917FB3500D7E7D4 /* ESSLandingPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESSLandingPageView.m; sourceTree = "<group>"; };
+		FADF842B1917FBED00D7E7D4 /* ESSLandingPageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESSLandingPageModel.h; sourceTree = "<group>"; };
+		FADF842C1917FBED00D7E7D4 /* ESSLandingPageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESSLandingPageModel.m; sourceTree = "<group>"; };
+		FADF842E1918054B00D7E7D4 /* ESSLandingPageViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESSLandingPageViewControllerTests.m; sourceTree = "<group>"; };
+		FADF84301918089600D7E7D4 /* ESSLandingPageModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESSLandingPageModelTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,12 +172,14 @@
 		FAB1B52218FF6A8C00497467 /* Effective-Spotify-Server */ = {
 			isa = PBXGroup;
 			children = (
+				FADF84241917FAE200D7E7D4 /* Landing Page */,
 				FAB1B58218FF809400497467 /* Server */,
 				FAB1B52B18FF6A8C00497467 /* ESSAppDelegate.h */,
 				FAB1B52C18FF6A8C00497467 /* ESSAppDelegate.m */,
 				FAB1B53118FF6A8C00497467 /* Images.xcassets */,
 				FAB1B52E18FF6A8C00497467 /* Effective_Spotify_Server.xcdatamodeld */,
 				FAB1B52318FF6A8C00497467 /* Supporting Files */,
+				FADF84221914113F00D7E7D4 /* Main.storyboard */,
 			);
 			path = "Effective-Spotify-Server";
 			sourceTree = "<group>";
@@ -237,6 +254,21 @@
 				FADF84201914105D00D7E7D4 /* OCMockRecorder.h */,
 			);
 			path = OCMock;
+			sourceTree = "<group>";
+		};
+		FADF84241917FAE200D7E7D4 /* Landing Page */ = {
+			isa = PBXGroup;
+			children = (
+				FADF84251917FB1A00D7E7D4 /* ESSLandingPageViewController.h */,
+				FADF84261917FB1A00D7E7D4 /* ESSLandingPageViewController.m */,
+				FADF842E1918054B00D7E7D4 /* ESSLandingPageViewControllerTests.m */,
+				FADF84281917FB3500D7E7D4 /* ESSLandingPageView.h */,
+				FADF84291917FB3500D7E7D4 /* ESSLandingPageView.m */,
+				FADF842B1917FBED00D7E7D4 /* ESSLandingPageModel.h */,
+				FADF842C1917FBED00D7E7D4 /* ESSLandingPageModel.m */,
+				FADF84301918089600D7E7D4 /* ESSLandingPageModelTests.m */,
+			);
+			name = "Landing Page";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +347,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADF84231914113F00D7E7D4 /* Main.storyboard in Resources */,
 				FAB1B52718FF6A8C00497467 /* InfoPlist.strings in Resources */,
 				FAB1B53218FF6A8C00497467 /* Images.xcassets in Resources */,
 			);
@@ -336,13 +369,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAB1B58518FF80B600497467 /* ESSServer.m in Sources */,
+				FADF84271917FB1A00D7E7D4 /* ESSLandingPageViewController.m in Sources */,
 				FAB1B5AE18FF84E500497467 /* MongooseServer.m in Sources */,
 				FAB1B5AD18FF84E500497467 /* mongoose.c in Sources */,
 				FAB1B5B418FF84E500497467 /* ServletResponse.m in Sources */,
 				FAB1B53018FF6A8C00497467 /* Effective_Spotify_Server.xcdatamodeld in Sources */,
 				FAB1B5B218FF84E500497467 /* Servlet.m in Sources */,
 				FAB1B5AA18FF84E500497467 /* ImageServlet.m in Sources */,
+				FADF842D1917FBED00D7E7D4 /* ESSLandingPageModel.m in Sources */,
 				FAB1B5B518FF84E500497467 /* UploadServlet.m in Sources */,
+				FADF842A1917FB3500D7E7D4 /* ESSLandingPageView.m in Sources */,
 				FAB1B52D18FF6A8C00497467 /* ESSAppDelegate.m in Sources */,
 				FAB1B5B318FF84E500497467 /* ServletRequest.m in Sources */,
 				FAB1B52918FF6A8C00497467 /* main.m in Sources */,
@@ -353,7 +389,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADF84311918089600D7E7D4 /* ESSLandingPageModelTests.m in Sources */,
 				FAB1B54618FF6A8C00497467 /* Effective_Spotify_ServerTests.m in Sources */,
+				FADF842F1918054B00D7E7D4 /* ESSLandingPageViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

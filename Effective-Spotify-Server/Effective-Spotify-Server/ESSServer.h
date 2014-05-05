@@ -13,6 +13,6 @@
 
 @interface ESSServer : NSObject
 
-- (id)initWithServerPort:(NSInteger)portNumber;
+- (void)createServerWithPort:(NSInteger)portNumber;
 
 @end

@@ -16,14 +16,10 @@
 
 @implementation ESSServer
 
-- (id)initWithServerPort:(NSInteger)portNumber {
-    if (self = [super init]) {
+- (void)createServerWithPort:(NSInteger)portNumber {
 
-        self.server = [[MongooseServer alloc] initWithPort:portNumber allowDirectoryListing:YES];
-        
-    }
-    
-    return self;
+    self.server = [[MongooseServer alloc] initWithPort:portNumber allowDirectoryListing:YES];
+
 }
 
 @end
